@@ -203,10 +203,16 @@ How do we access the value from the promise? To access the value from the promis
 
 ```js
 const square = async function (n) {
-  return n * n
+  return n * n;
 }
-const value = await square(2)
-console.log(value)
+
+async function main() {
+  const value = await square(2);
+  console.log(value);
+}
+
+main();
+
 ```
 
 ```sh
